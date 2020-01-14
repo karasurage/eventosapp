@@ -1,12 +1,15 @@
 package br.com.eventosapp.models;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "evento")
@@ -17,10 +20,29 @@ public class Evento implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long codigo;
+	
+	@NotEmpty
 	private String nome;
+	
+	@NotEmpty
 	private String local;
+	
+	@NotEmpty
 	private String data;
+	
+	@NotEmpty
 	private String horario;
+
+	@OneToMany
+	private List<Convidado> convidado;
+
+	public long getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(long codigo) {
+		this.codigo = codigo;
+	}
 
 	public String getNome() {
 		return nome;
@@ -52,6 +74,14 @@ public class Evento implements Serializable {
 
 	public void setHorario(String horario) {
 		this.horario = horario;
+	}
+
+	public List<Convidado> getConvidado() {
+		return convidado;
+	}
+
+	public void setConvidado(List<Convidado> convidado) {
+		this.convidado = convidado;
 	}
 
 }
