@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http//thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8">
+	<title>EventosApp</title>
+	
+	<!--Import Google Icon Font-->
+	<link th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet" />
+	
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" th:href="@{css/materialize.min.css}"  media="screen,projection"/>
+	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css}" />
+	
+	<!-- Compiled and minified JavaScript -->
+	<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js}"></script>      
+</head>
+<body>
+
+	<h1>Eventos</h1>
+	<h3><a class="waves-effect waves-light btn" th:href="@{/eventos}"><i class="material-icons left">add_circle_outline</i>Lista de Eventos</a></h3>
+	
+	<div class="row" th:each="evento : ${evento}" class="container">
+		<p><span th:text="${evento.nome}"></span></p>
+		<p><span th:text="${evento.local}"></span></p>
+		<p><span th:text="${evento.data}"></span></p>
+		<p><span th:text="${evento.horario}"></span></p>
+	</div>
+	
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" th:src="@{https://code.jquery.com/jquery-3.2.1.min.js}"></script>
+	<script type="text/javascript" th:src="@{/materialize/js/materialize.min.js}"></script>
+</body>
+</html>
