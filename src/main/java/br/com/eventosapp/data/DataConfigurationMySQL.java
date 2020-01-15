@@ -1,4 +1,4 @@
-package br.com.eventosapp;
+package br.com.eventosapp.data;
 
 import javax.sql.DataSource;
 
@@ -10,7 +10,7 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
-public class DataConfiguration {
+public class DataConfigurationMySQL {
 
 	@Bean
 	public DataSource dataSource() {

@@ -1,5 +1,6 @@
 package br.com.eventosapp.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -15,6 +16,7 @@ public class Convidado {
 	private String rg;
 	
 	@NotEmpty
+	@Column(name = "nome_convidado")
 	private String nomeConvidado;
 	
 	@NotEmpty
