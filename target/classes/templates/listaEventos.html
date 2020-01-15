@@ -3,7 +3,7 @@
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadastro de Eventos</title>
+	<title>EventosApp - Home</title>
 	
 	<!--Import Google Icon Font-->
 	<link th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet" />	
@@ -19,12 +19,12 @@
 	<header>
 		<nav class="menu">
 			<div class="nav-wrapper">
-				<a th:href="@{/eventos}" class="brand-logo">Cadastro de Eventos</a>
+				<a th:href="@{/eventos}" class="brand-logo">Lista de Eventos</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li>
-						<a th:href="@{/eventos}" class="waves-effect waves-light btn">
-							<i class="material-icons left">format_list_bulleted</i>
-							Lista de Eventos
+						<a class="waves-effect waves-light btn" th:href="@{/cadastrarEvento}">
+							<i class="material-icons left">add_circle_outline</i>
+							Cadastrar Evento
 						</a>
 					</li>
 				</ul>
@@ -32,35 +32,34 @@
 		</nav>	
 	</header>
 
-	<th:block th:include="mensagemValidacao"></th:block>
-	
-	
-	<div class="container formEvento">
-	
-		<form class="container" method="POST" >
-			Nome: <input type="text" value="" name="nome"/>
-			<div class="row">
-				<div class="input-field col s6">
-					Local: <input type="text" value="" name="local"/>
-				</div>
-				<div class="input-field col s3">
-					Data: <input type="date" value="" name="data"/>
-				</div>
-				<div class="input-field col s3">
-					Horário: <input type="time" value="" name="horario"/>
-				</div>
-			</div>
-			<button class="waves-effect waves-light btn" type="submit">Salvar</button>
-			<a th:href="@{/eventos}" class="waves-effect waves-light btn btn">Voltar</a>
-			<button class="waves-effect waves-light red btn" type="reset">Redefinir Campos</button>
-		
-		</form>
-	</div>
-
+	<table class="container responsive-table highlight">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Local</th>
+				<th>Data</th>
+				<th>Horário</th>
+				<th>Deletar</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="evento : ${eventos}">
+				<td><a th:href="@{/{codigo}(codigo = ${evento.codigo})}"><span th:text="${evento.nome}"></span></a></td>
+				<td><span th:text="${evento.local}"></span></td>
+				<td><span th:text="${evento.data}"></span></td>
+				<td><span th:text="${evento.horario}"></span></td>
+				<td>
+					<a class="waves-effect waves-light btn-small" th:href="@{/deletarEvento/{codigo}(codigo = ${evento.codigo})}">
+						<i class="material-icons left">delete</i>
+					</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 	<!-- Compiled and minified JavaScript -->
 	<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js}"></script>
-	<!--Import jQuery before materialize.js-->
+	<!--Import jQuery before materialize.js -->
 	<script type="text/javascript" th:src="@{https://code.jquery.com/jquery-3.2.1.min.js}"></script>
 </body>
 </html>
