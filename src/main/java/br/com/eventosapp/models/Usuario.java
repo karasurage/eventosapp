@@ -3,6 +3,7 @@ package br.com.eventosapp.models;
 import java.util.Collection;
 import java.util.List;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -12,7 +13,10 @@ import javax.validation.constraints.NotEmpty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+@Entity
 public class Usuario implements UserDetails {
+
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	private String login;
@@ -64,7 +68,7 @@ public class Usuario implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return null;
+		return roles;
 	}
 
 	@Override
@@ -79,22 +83,22 @@ public class Usuario implements UserDetails {
 
 	@Override
 	public boolean isAccountNonExpired() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		return false;
+		return true;
 	}
 
 }
