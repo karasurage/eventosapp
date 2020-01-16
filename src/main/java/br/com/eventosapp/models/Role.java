@@ -5,8 +5,6 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 import org.springframework.security.core.GrantedAuthority;
@@ -19,11 +17,7 @@ public class Role implements GrantedAuthority, Serializable {
 	@Id
 	private String nomeRole;
 
-	@ManyToMany(mappedBy = "roles")
-	@JoinTable(name = "roles_usuarios", joinColumns = @JoinColumn(
-			name = "roles_id", referencedColumnName = "nomeRole"),
-	inverseJoinColumns = @JoinColumn(
-			name = "usuarios_id", referencedColumnName = "login"))
+	@ManyToMany
 	private List<Usuario> usuarios;
 
 	public String getNomeRole() {

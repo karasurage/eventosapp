@@ -27,7 +27,7 @@ public class Usuario implements UserDetails {
 	private String senha;
 
 	
-	@ManyToMany(mappedBy = "usuarios")
+	@ManyToMany
 	@JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(
 					name = "usuario_id", referencedColumnName = "login"),
 			inverseJoinColumns = @JoinColumn(
@@ -83,22 +83,22 @@ public class Usuario implements UserDetails {
 
 	@Override
 	public boolean isAccountNonExpired() {
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		return true;
+		return false;
 	}
 
 }
