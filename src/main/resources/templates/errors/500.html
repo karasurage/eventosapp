@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{layout/LayoutSimples}">
+
+<th:block layout:fragment="conteudoSimples">
+
+	<div class="aw-error-panel">
+		<h1 class="aw-error-panel__code">
+			<i class="fa  fa-location-arrow"></i> 500
+		</h1>
+		
+		<h2 class="aw-error-panel__title">Erro no Servidor</h2>
+		
+		<div class="aw-error-panel__description">
+			<p style="text-align: justify;">
+				Desculpe, algo muito estranho aconteceu e não conseguimos processar a sua requisição. 
+				Tente de novo ou entre em contato com a gente se precisar de ajuda.
+			</p>
+			<a th:href="@{/login}" class="btn  btn-primary">Voltar para a Página Inicial</a>
+		</div>
+	</div>
+</th:block>
+</html>
+
+<!-- href="javascript:history.back()" -->

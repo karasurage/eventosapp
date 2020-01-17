@@ -35,11 +35,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
 		.antMatchers(HttpMethod.GET, "/").permitAll()
-		.antMatchers(HttpMethod.GET, "/cadastrarEvento").permitAll()/*.hasRole("USER")*/
+		.antMatchers(HttpMethod.GET, "/cadastrarEvento").hasRole("USER")
 		.antMatchers(HttpMethod.POST, "/cadastrarEvento").hasRole("ADMIN")
 		.anyRequest().authenticated()
 		.and().formLogin().permitAll()
-		//.and().exceptionHandling().accessDeniedPage("/403")
+		.and().exceptionHandling().accessDeniedPage("/errors/403")
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 	

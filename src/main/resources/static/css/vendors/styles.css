@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ######################
+   # ARQUIVO login.html #
+   ###################### */
+
+/* ##### TAG body ##### */
+/* Informações do Body */
+.body-login {
+	background: #104E8B;
+	width: 100%;
+	height: auto;
+}
+
+/* ##### TAG body > div ##### */
+/* Informações do Login */
+.body-login-div {
+	text-align: center;
+	display: block;
+	background: #87CEFA;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ##### TAG <section> --> div ##### */
+/* Informações da Seção do Box */
+.section-div {
+	text-align: center;
+	/*position: position;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	justify-content: center;*/
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;	
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+/* 	margin-left: 34%; */
+/* 	margin-top: 130px; Retirar quando voltar o campo de senha */
+}
+
+/* ##### TAG form > div ##### */
+/* Informações do Box do Login */
+.box-login {
+	/* Padrão Layout width: 500px; height: 300px */ /* height 285px fica ideal */
+	width: 500px;
+	height: 230px;
+}
+
+/* ##### TAG form > div > div > span ##### */
+/* Informações do Box do Título do Login */
+.box-titulo {
+	font-weight: bold;
+	color: #104E8B;
+	font-size: 18px;
+}
+
+/* ##### TAG form > div > div ##### */
+/* Informações do Box do Campo Matrícula do Login */
+.box-campo-matricula {
+	text-align: center;
+}
+
+/* ##### TAG form > div > div ##### */
+/* Informações do Box do Campo Senha do Login */
+.box-campo-senha {
+	text-align: center;
+}
+
+/* ##### TAG form > div > div ##### */
+/* Informações do Box do Botão para Acesso ao Login */
+.box-botao-login {
+	text-align: center;
+}
+
+/* ##### TAG form > div > div > buttom ##### */
+/* Informações do Box do Botão para Acesso ao Login */
+#botao {
+	width: 250px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ################################
+   # ARQUIVO barra-navegacao.html #
+   ################################ */
+
+/* Sem configurações CSS */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* #############################
+   # ARQUIVO menu-lateral.html #
+   ############################# */
+
+/* Sem configurações CSS */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* #######################
+   # ARQUIVO rodape.html #
+   ####################### */
+
+/* ##### TAG footer > div > div ##### */
+/* Informações do Rodapé */
+.footer-rodape {
+	text-align: center;
+}
+
+/* ##### TAG footer > div > div > span ##### */
+/* Informações do Texto do Rodapé --> <span> */
+#footer-texto-span-rodape {
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
+/* ##### TAG footer > div > div > span > p ##### */
+/* Informações do Texto do Rodapé --> <p> */
+.footer-texto-p-rodape {
+	color: #FFFFFF;
+	margin: 10px;
+}
+
+/* ##### TAG footer > div > div > span > p > span ##### */
+/* Informações do Texto do Rodapé --> <span> */
+.footer-texto-span-p-span-rodape {
+	color: white; /* cor padrão --> #CFCFCF */
+	bottom: 0;
+	width: 100%;
+}
+
+/* ##### TAG footer > div > div > span > p > span ##### */
+/* Informações do Texto do Rodapé --> <span>  INDEX */
+.footer-texto-span-p-span-rodape-index {
+	/* cor padrão --> #CFCFCF */
+	text-align: center;
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	color: black;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ######################
+   # ARQUIVO index.html #
+   ###################### */
+
+/* ##### TAG body > div > img ##### */
+/* Informações do Logotipo Academia Fernandinho Beltrão */
+#img-logo-login {
+	text-align: center;
+	
+}
+
+/* ##### TAG body > div > div ##### */
+/* Informações do Body do Logo do Index */
+.body-div-index {
+	text-align: center;
+	background: #87CEFA;
+}
+
+/* ##### TAG body > div > div ##### */
+/* Informações do Body do Logo do Index */
+.body-div-container-index {
+	align: center;
+}
+
+/* ##### TAG body > div > div > div ##### */
+/* Informações do Body do Logo do Index */
+.body-div-container-fluid-index {
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+/* ##### TAG div > div ##### */
+/* Informações da Imagem do Aluno da Página no Index */
+/*#imagem-aluno {
+	max-width: 100%;
+	height: auto;	
+	float: right;
+	width: 170px;
+    height: 170px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}*/
+
+/* ##### TAG div ##### */
+/* Informações do Conteúdo da Página no Index */
+.cabecalho-aluno {
+	width: 100%;
+}
+
+.panel-heading {
+	width: 100%;
+	text-align: center;
+	
+}
+
+.panel-primary {
+	margin-bottom: 0px;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.panel-body {
+	color: #104E8B;
+	font-size: 12px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 5px;
+	position: center;
+}
+
+.dados-aluno-linhas {
+	margin: 2px;
+	padding: 2px;
+	border: 1px RGB(30,148,210) solid;
+	border-radius: 5px;
+	width: 97%;
+}
+
+/* ##### TAG div principal ##### */
+/* Informações do Bloco dos botões de Contrato e Sair do Sistema da Página no Index */
+.div-contrato-sair-botoes {
+	padding: 0px;
+}
+
+/* ##### TAG div ##### */
+/* Informações do Botão de Sair do Sistema da Página no Index */
+.div-sair-sistema {
+	display: inline-flex;
+	float: right;
+}
+
+/* ##### TAG div > div ##### */
+/* Informações do Botão de Sair do Sistema da Página no Index */
+#div-div-botao-sair {
+	padding: 5px;
+}
+
+/* ##### TAG div > div > a ##### */
+/* Informações do Link do Botão de Sair do Sistema da Página no Index */
+#link-botao-sair {
+	font-size: 18px;
+	font-style: oblique;
+	color: #FFFFFF;
+}
+
+/* ##### TAG div > div > a > button ##### */
+/* Informações do Botão de Sair do Sistema da Página no Index */
+#botaoLogout {
+	width: 100px;
+}
+
+/* ##### TAG div ##### */
+/* Informações do Botão de 2ª Via do Contrato da Página no Index */
+.div-sair-contrato {
+	display: inline-flex;
+	float: right;
+}
+
+/* ##### TAG div > div ##### */
+/* Informações do Botão de 2ª Via do Contrato da Página no Index */
+#div-div-botao-contrato {
+	padding: 5px;
+}
+
+/* ##### TAG div > div > a ##### */
+/* Informações do Link do Botão de 2ª Via do Contrato da Página no Index */
+#link-botao-contrato {
+	font-size: 18px;
+	font-style: oblique;
+	color: #FFFFFF;
+}
+
+/* ##### TAG div > div > a > button ##### */
+/* Informações do Botão de 2ª Via do Contrato da Página no Index */
+#botaoContrato {
+	width: 190px;
+}
+
+/* ##### TAG div ##### */
+/* Informações do Títulos/Boletos da Página no Index */
+.titulo-boletos-index {
+	font-size: 28px;
+	margin-left: 5px;
+	margin-right: 15px;
+	padding: 7px;
+	width: 99.4%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* ##### TAG form > div > label ##### */
+/* Informações do Botão de Filtro dos Boletos da Página no Index */
+.statusBoleto {
+	padding: 5px;
+	width: 240px;
+	margin: 5px;
+}
+
+/* ##### TAG form > div > label > select ##### */
+/* Informações do Botão de Filtro dos Boletos da Página no Index */
+#status {
+	width: 230px;
+}
+
+/* ##### TAG form > div > label ##### */
+/* Informações do Campo e Botão do Imposto de Renda da Página no Index */
+.statusDeclaracao {
+	padding-left: 20px;
+	width: 120px;
+	margin-top: 3px;
+}
+
+/* ##### TAG form > div > label > select ##### */
+/* Informações do Campo e Botão do Imposto de Renda da Página no Index */
+#statusDeclaracao {
+	width: 90px;
+}
+
+/* ##### TAG form > div > a ##### */
+/* Informações do Campo e Botão do Imposto de Renda da Página no Index */
+.btn-sm-statusDeclaracao {
+	margin-left: -7px;
+	width: 40px;
+	/* Retirar esse item quando o botão estiver funcionando */
+	background-color: #aaa9a9;
+}
+
+/* ##### TAG div ##### */
+/* Informações do Corpo da Tabela da Página no Index */
+.tabela-titulos {
+	padding: 10px;
+}
+
+/* ##### TAG div > table > thead > tr > th ##### */
+/* Informações do Corpo da Tabela da Página no Index */
+#th-alinhamento-center {
+	text-align: center;
+}
+
+/* ##### TAG tbody > tr > td > left ##### */
+/* Informações do Corpo da Tabela da Página no Index */
+#td-alinhamento-left {
+	text-align: left;
+}
+
+/* ##### TAG tbody > tr > td > center ##### */
+/* Informações do Corpo da Tabela da Página no Index */
+#td-alinhamento-center {
+	text-align: center;
+}
+
+/* ##### TAG div > div ##### */
+/* Informações do Rodapé da Página no Index */
+.footer-rodape-login {
+	text-align: center;
+	position: sticky;
+	margin-top: 16px;
+	margin-bottom: 10px;
+/* 	left: 0; */
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+/* ##### TAG div > div ##### */
+/* Informações do Rodapé da Página no Index */
+.footer-rodape-span-index {
+	color: #000000;
+}
+
+#nomeAluno {
+	width: 10px;
+	color: black;
+}
